@@ -9,19 +9,14 @@
         </Frame>
         <Label 
             x:Name="LblText"
-            Text="Start developing now"
+            Text="Aqui se mostraran los ofertones"
             FontSize="Title"
             Padding="30,10,30,10"/>
         <Button
-            x:Name="BtnConsulta"
-            Text="Consulta"
+            x:Name="BtnAboutUser"
+            Text="Acerca del usuario"
             VerticalOptions="Center"
             HorizontalOptions="Center"/>
-        <Entry
-            x:Name="EtyResultado"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            WidthRequest="100"/>
     </StackLayout>
 
 </ContentPage>

@@ -22,8 +22,8 @@ namespace AppSDelivery
         {
             builder.Server = "sql3.freemysqlhosting.net";
             builder.Database = "sql3360291";
-            builder.UserID = usr;
-            builder.Password = pass;
+            builder.UserID = "sql3360291";
+            builder.Password = "991004ajgep";
             
             try
             {
@@ -38,6 +38,14 @@ namespace AppSDelivery
                 return false;
             }
         }
+
+        public bool Login()
+        {
+            string dato1 = "Select * FROM Registros Where usuario ="+usr;
+            MySqlCommand consult = new MySqlCommand(dato1);
+            return true;
+        }
+
         /**private void Conexion()
         {
             string connectionString = "datasource=sql3.freemysqlhosting.net;port=3306;username=sql3360291;password=991004ajgep;database=sql3360291";
